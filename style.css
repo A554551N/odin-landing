@@ -5,6 +5,11 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
 body .body-1, .body-2, .body-3, .image-callout, header, footer, .call-to-action {
     display: flex;
 }
