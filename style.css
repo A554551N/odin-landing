@@ -2,18 +2,19 @@ body {
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-.body-1, .body-2, .image-callout {
+body .body-1, .body-2, .body-3, .image-callout, header, footer, .call-to-action {
     display: flex;
 }
 #header-image {
     margin: 40px;
+    border: 2px white solid;
+    border-radius: 4px;
 }
 
-#body-2-header {
+.centered {
     text-align: center;
 }
 
@@ -22,10 +23,10 @@ body {
 }
 
 header {
-    display: flex;
     justify-content: space-around;
     color: #F9FAF8;
     font-size: 24px;
+    padding: 10px;
 }
 
 .logo {
@@ -53,6 +54,20 @@ header {
     justify-content: center;
     padding: 10px;
     gap: 20px;
+    padding-bottom: 30px;
+}
+
+.body-3 {
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+.body-3 blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .image-callout {
@@ -66,6 +81,35 @@ header {
 .image-callout img {
     border-radius: 4px;
     border: 2px #3882F6 solid;
+}
+
+.author {
+    text-align: right;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.call-to-action {
+    background-color: #3882F6;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #E5E7EB;
+    align-items: center;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.cta-head {
+    font-weight: 700;
+}
+
+.call-to-action button {
+    border: white 2px solid;
+}
+
+.cta-text {
+    padding: 20px;
 }
 
 ul {
@@ -85,4 +129,11 @@ button {
     border-radius: 4px;
     border: 0;
     font-weight: 700;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
