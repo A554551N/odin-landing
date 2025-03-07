@@ -1,8 +1,17 @@
 body {
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+}
+
+#header-image {
+    margin: 40px;
+}
+.body-1, header {
+    background-color: #1F2937;
 }
 
 header {
@@ -16,10 +25,21 @@ header {
     font-weight: 900;
 }
 
+.hero-text-container {
+    padding: 20px;
+}
+.hero-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
 .body-1 {
-    background-color: #1F2937;
     display: flex;
-    flex-direction: column;
+    color: #E5E7EB;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 
 ul {
